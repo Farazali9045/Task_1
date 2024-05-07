@@ -1,0 +1,916 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    padding:20px;
+}
+
+/**Scrollbar styling start here**/
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0bda68;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/**Scrollbar styling end here**/
+/**Navbar styling start here**/
+header{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    background: rgba(193, 193, 193, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(193, 193, 193, 0.62);
+}
+.logo a{
+   font-size: 30px;
+   font-weight: 500;
+   transition: all 0.3s ease;
+}
+.logo a span{
+    color: #0bda68;
+}
+.logo a:hover{
+    opacity: 0.95;
+}
+
+ul{
+    display: flex;
+    
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.links:hover{
+    color: #0bda68;
+}
+
+
+
+
+.links::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .links:hover::before {
+    transform: scaleX(1);
+  }
+
+li a{
+    margin-left: 30px;
+}
+
+.contact-btn a{
+    background-color: #0bda68;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+.contact-btn a:hover{
+   opacity: 0.95;
+}
+.hamburger{
+    display: none;
+}
+.ham-menu{
+    display: none;
+}
+
+
+/**Navbar styling end here**/
+/**Hero styling start here**/
+.hero-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.hero-content{
+    padding: 0px 15px;
+}
+
+h4{
+    font-size: 24px;
+}
+h2{
+    font-size: 40px;
+    color: #fff;
+}
+h2 span{
+    color: #0bda68;
+}
+h3{
+    font-size: 30px;
+    color: #fff;
+}
+h3 span{
+   color: #0bda68;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+}
+.hero-img img{
+    height: 450px;
+}
+
+
+/**Hero styling end here**/
+/**About section  styling start here**/
+.about-us{
+    min-height: 50vh;
+    width: 100%;
+    padding: 45px 0;
+    
+  }
+  .pic{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    border: 5px solid #0bda68;
+    background: url('./assets/IMG_20180506_190744.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .text h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #0bda68;
+  }
+  span{
+    color: #fff;
+  }
+  .text p{
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+  .hire{
+    font-size: 16px;
+    background: #0bda68;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+  }
+  
+/**About sectionstyling end here**/
+/**Skill section styling start here**/
+.skill{
+  min-height: 45vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px; 
+}
+.skill-heading{
+  color: #0bda68;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.skill-para{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.skill-icons{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill-icons img{
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+/**Skill section  styling end here**/
+/**Project section styling start here**/
+.project{
+  min-height: 40vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px; 
+}
+.project-heading{
+  color: #0bda68;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.project-para{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.project-box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+.project-card{
+  height: 350px;
+  width: 250px;
+  border-radius: 8px;
+  background: rgba(193, 193, 193, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(193, 193, 193, 0.62);
+  margin: 10px;
+}
+.project-img{
+  height: 40%;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+
+}
+.img1{
+  background: url('./assets/Project_img/portfolio.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.img2{
+  background: url('./assets/Project_img/tic-tac-toe.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img3{
+  background: url('./assets/Project_img/todoList.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pro-heading{
+  text-align: center;
+  font-size: 16px;
+  color: #0bda68;
+  padding: 0px 5px;
+  margin-top: 5px;
+}
+.pro-para{
+   text-align: start;
+   font-size: 12px;
+   color: #fff;
+   padding: 0px 10px;
+   margin-top: 5px;
+}
+.using-tech{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 5px;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.using-tech span{
+  padding: 2px;
+  text-align: center;
+  height: 20px;
+  width: 40px;
+  background-color: #0bda68;
+  color: #ffffffdd;
+  border-radius: 5px;
+}
+.get-code{
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+ 
+}
+.live,.source-code{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.live a,.source-code a{
+  text-decoration: underline;
+  font-size: 12px;
+  color: #fff;
+}
+.fa-github,.fa-link{
+  color: #fff;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.resume{
+  margin-top: 35px;
+}
+.resume a{
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: #0bda68;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+}
+/**Project section styling end here**/
+
+/**Contact section styling start here**/
+.contact{
+  min-height: 80vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px; 
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-size: 16px;
+  color: #0bda68;
+  margin-bottom: 10px;
+}
+input,textarea{
+   border: none; 
+    background: rgba(193, 193, 193, 0.25);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(193, 193, 193, 0.62);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+    
+}
+input:focus,textarea:focus{
+  outline: 2px solid #0bda68;
+}
+input{
+  height: 50px;
+  width: 400px;
+  margin-bottom: 15px;
+}
+textarea{
+  resize: none;
+  padding: 10px;
+}
+.submit-btn{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #0bda68;
+  color: #0bda68;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+}
+/**Contact section styling end here**/
+
+
+/**Footer styling styling start here**/
+.footer{
+  min-height: 20vh; 
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(193, 193, 193, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(193, 193, 193, 0.62);
+   margin-top: 40px;
+}
+.social-para{
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+.social-media{
+  margin-top: 10px;
+}
+.social-media a i{
+  font-size: 25px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.social-media a i:hover{
+  color: #0bda68;
+}
+/**Footer styling end here**/
+
+/**Media queries begin here**/
+@media(max-width: 1104px) {
+ 
+    .about{
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+      .pic{
+   
+        height: 330px;
+        width: 330px;
+      }
+    
+      .text{
+        text-align: center;
+        
+      }
+      .text h2{
+        font-size: 43px;
+        margin-bottom: 10px;
+      }
+      .text h5{
+        font-size: 19px;
+        margin-bottom: 20px;
+       
+      }
+      
+      .text p{
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+      .data{
+        margin-top: 30px;
+      }
+      .hire{
+        font-size: 15px;
+        padding: 8px 25px;
+       
+      }
+      .skill{
+    
+        margin-top: 25px; 
+      }
+      .skill-heading{
+  
+        font-size: 43px;
+        margin-bottom: 10px;
+      }
+      .skill-para{
+    
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+      
+      .skill-icons img{
+        margin: 20px;
+        height: 95px;
+        width: 95px;
+   
+      }
+      .project-heading{
+        font-size: 43px;
+      }
+      .project-para{
+        font-size: 19px;
+      }
+      label{
+        font-size: 15px;
+      }
+      .social-para{
+        font-size: 15px;
+      }
+      .social-media a i{
+        font-size: 22px;
+      }
+}
+@media(max-width: 992px) {
+    header {
+        height: 60px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+     .links{
+        font-size: 14px;
+     }
+    .contact-btn a {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    h4{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 36px;
+        
+    }
+   
+    h3{
+        font-size: 28px;
+       
+    }
+  
+    p{
+       
+        font-size:18px;
+    }
+    .hero-img img{
+        height: 400px;
+    }
+  
+   
+      .pic{
+   
+        height: 300px;
+        width: 300px;
+      }
+    
+     
+      .text h2{
+        font-size: 41px;
+        margin-bottom: 9px;
+      }
+      .text h5{
+        font-size: 17px;
+        margin-bottom: 18px;
+       
+      }
+      
+      .text p{
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+      .data{
+        margin-top: 26px;
+      }
+      .hire{
+        font-size: 14px;
+       
+      }
+      .skill{
+    
+        margin-top: 25px; 
+      }
+      .skill-heading{
+  
+        font-size: 41px;
+        margin-bottom: 10px;
+      }
+      .skill-para{
+    
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+      
+      .skill-icons img{
+        margin: 20px;
+        height: 90px;
+        width: 90px;
+   
+      }
+      .project-heading{
+        font-size: 41px;
+      }
+      .project-para{
+        font-size: 17px;
+      }
+      .resume a{
+        font-size: 14px;
+        padding: 10px 22px;
+      }
+      label{
+        font-size: 14px;
+      }
+      .social-para{
+        font-size: 14px;
+      }
+      .social-media a i{
+        font-size: 20px;
+      }
+
+}
+
+@media(max-width: 760px) {
+  
+    header{
+      
+        padding: 0px 10px;
+    }
+    .links{
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    
+    .logo a {
+        font-size: 22px;
+    }
+    .contact-btn a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 32px;
+        
+    }
+   
+    h3{
+        font-size: 26px;
+       
+    }
+  
+    p{
+       
+        font-size:16px;
+    }
+    .hero-img img{
+        height: 350px;
+    }
+    .pic{
+   
+        height: 250px;
+        width: 250px;
+      }
+    
+     
+      .text h2{
+        font-size: 36px;
+        margin-bottom: 9px;
+      }
+      .text h5{
+        font-size: 16px;
+        margin-bottom: 18px;
+       
+      }
+      
+      .text p{
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+      .data{
+        margin-top: 26px;
+      }
+      .hire{
+        font-size: 13px;
+       
+      }
+      .skill{
+    
+        margin-top: 25px; 
+      }
+      .skill-heading{
+  
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      .skill-para{
+    
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .skill-icons img{
+        height: 80px;
+        width: 80px;
+      }
+      .project-heading{
+        font-size: 36px;
+      }
+      .project-para{
+        font-size: 16px;
+      }
+      .pro-heading{
+        font-size: 15px;
+      }
+      .pro-para{
+         font-size: 11px;
+      }
+      input{
+        width: 350px;
+      }
+      .social-para{
+        font-size: 13px;
+      }
+      .social-media a i{
+        font-size: 18px;
+      }
+
+
+    }
+    @media(max-width:620px){
+         ul{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    header{
+        padding: 0px 18px;
+        height: 55px;
+        position: relative;
+        background: #000;
+    }
+    
+    .ham-menu{
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: -1px;
+        height: 200px;
+        width: 100%;
+        border-radius: 8px;
+        background: #000;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(193, 193, 193, 0.62);
+    }
+    .active{
+        display: none;
+    }
+    .ham_nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+    }
+    .ham_links{
+        padding: 5px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 22px;
+        color: #0bda68;
+        cursor: pointer;
+    }
+    .hover-links:hover{
+        color: #0bda68;
+    }
+    
+   
+    
+    
+    .hover-links::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+      .hover-links:hover::before {
+        transform: scaleX(1);
+      }
+   
+    .hero-img img{
+        display: none;
+    }
+    
+    .pic{
+        margin: 0;
+        height: 200px;
+        width: 200px;
+      }
+    
+     
+      .text h2{
+        font-size: 36px;
+        margin-bottom: 9px;
+      }
+      .text h5{
+        font-size: 16px;
+        margin-bottom: 18px;
+       
+      }
+      
+      .text p{
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+      .data{
+        margin-top: 26px;
+      }
+      .hire{
+        font-size: 13px;
+       
+      }
+    
+      .skill-icons img{
+        height: 70px;
+        width: 70px;
+      
+      }
+      input{
+        width: 300px;
+      }
+      .social-para{
+        font-size: 12px;
+      }
+      .social-media a i{
+        font-size: 16px;
+      }
+    
+    }
+@media(max-width:350px){
+    input{
+      width: 270px;
+    }
+    .social-para{
+      font-size: 10px;
+    }
+}
